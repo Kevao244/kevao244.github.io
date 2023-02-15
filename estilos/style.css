@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap");
+
+* {
+  margin: 0; /* tira a margem de todo o projeto*/
+  padding: 0; /* tira o padding de todo o projeto*/
+}
+
+:root {
+  --cor-primaria: #000000;
+  --cor-secundaria: #f6f6f6;
+  --cor-terciaria: #22d4fd;
+  --cor-hover: #272727;
+
+  --fonte-primaria: "Krona One", sans-serif;
+  --fonte-secundaria: "Montserrat", sans-serif;
+}
+
+body {
+  /* height: 100vh; */
+  box-sizing: border-box;
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+}
+
+.cabecalho {
+  padding: 2% 0 0 20%;
+}
+
+.cabecalho__menu {
+  display: flex;
+  gap: 80px;
+}
+
+.cabecalho__menu__link {
+  font-family: var(--fonte-secundaria);
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--cor-terciaria);
+  text-decoration: none;
+}
+
+.titulo-destaque {
+  color: var(--cor-terciaria); /* cor diferente do titulo*/
+}
+
+.apresentacao {
+  padding: 5% 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 82px
+}
+
+.apresentacao__conteudo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+  font-size: 2.25rem; /* tamanho da fonte*/
+  font-family: var(--fonte-primaria); /* fonte*/
+}
+
+.apresentacao__conteudo__paragrafo {
+  font-size: 1.5rem;
+  font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__links {
+  display: flex;
+  flex-direction: column; /* direção que os botoes vao ficar*/
+  justify-content: space-between; /* estilo de espaço da caixa*/
+  align-items: center; /* onde eu quero que os botoes fiquem*/
+  gap: 32px; /* espaçamento dos botoes*/
+}
+
+.apresentacao__links__subtitulo {
+  font-family: var(--fonte-primaria);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.apresentacao__links__botao {
+  width: 50%; /* largura dos botoes*/
+  text-align: center; /* alinha todos os textos no centro*/
+  border-radius: 16px; /* rredonda as bordas da imagem*/
+  font-size: 1.5rem; /* tamanho da fonte do texto*/
+  font-family: var(--fonte-secundaria); /* fonte*/
+  font-weight: 600; /* peso da fonte*/
+  padding: 21.5px 0; /* padding do fundo da caixinha*/
+  color: white; /* cor da fonte*/
+  text-decoration: none; /* tirar o sublinhado do link*/
+  border: 2px solid var(--cor-terciaria);
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.apresentacao__links__botao:hover {
+  background-color: var(--cor-hover);
+}
+
+.fotokevao {
+  width: 45%;
+  border: 3px solid var(--cor-terciaria); /* borda em volta da imagem*/
+  border-radius: 20px; /* arredonda a borda da imagem*/
+}
+
+.rodape {
+  text-align: center;
+  font-family: var(--fonte-secundaria);
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--cor-primaria);
+  background-color: var(--cor-terciaria);
+  padding: 24px;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho{
+         padding: 10%;  
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+  .apresentacao__conteudo{
+width: auto;
+  }
+    
+}
