@@ -59,7 +59,7 @@ body {
 }
 
 .apresentacao__conteudo__titulo {
-  font-size: 2rem; /* tamanho da fonte*/
+  font-size: 1.9rem; /* tamanho da fonte*/
   font-family: var(--fonte-primaria); /* fonte*/
 }
 
@@ -83,7 +83,7 @@ body {
 }
 
 .apresentacao__links__botao {
-  width: 50%; /* largura dos botoes*/
+  width: 70%; /* largura dos botoes*/
   text-align: center; /* alinha todos os textos no centro*/
   border-radius: 16px; /* rredonda as bordas da imagem*/
   font-size: 1.5rem; /* tamanho da fonte do texto*/
@@ -144,5 +144,9 @@ body {
 
   .apresentacao__conteudo {
     width: auto;
+  }
+
+  .apresentacao__links__botao {
+    width: 50%;
   }
 }
