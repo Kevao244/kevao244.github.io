@@ -59,12 +59,12 @@ body {
 }
 
 .apresentacao__conteudo__titulo {
-  font-size: 2.25rem; /* tamanho da fonte*/
+  font-size: 2rem; /* tamanho da fonte*/
   font-family: var(--fonte-primaria); /* fonte*/
 }
 
 .apresentacao__conteudo__paragrafo {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-family: var(--fonte-secundaria);
 }
 
